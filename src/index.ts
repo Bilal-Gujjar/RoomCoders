@@ -29,7 +29,7 @@ export async function returnSiteTitles() {
   // But in the Test Case It is Written "Neowin - Where unprofessional journalism looks better"
   // If you change the test case to "Tech News, Reviews & Betas | Neowin" then it will pass
   // SomeTime URL Ping take moretime due to low internet speed or low bandwidth to get the response
-  // May effect the test case if you got this error RUN test again 
+  // May effect the test case if you got this error RUN test again.
  /*-------------------------------------------------------- */
   const reqs = [];
   const tempData = [];
@@ -51,6 +51,10 @@ export async function returnSiteTitles() {
     if (match?.length) {
       titles.push(match[1]);
     }
+    else {
+      titles.push('No Title Found');
+    }
+    
   }
   return titles
 }
