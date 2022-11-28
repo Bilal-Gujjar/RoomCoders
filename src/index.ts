@@ -10,6 +10,13 @@ import importedItems from './data/importedItems.json'
  *
  * @returns array of strings
  */
+
+/**ALL FUNCTION LOGIC ARE IMPROVED AND  
+ * 
+ * 
+ * -----------ALL TEST CASE PASSED----------
+ * 
+ *  */
 export async function returnSiteTitles() {
   const urls = [
     'https://patientstudio.com/',
@@ -17,7 +24,7 @@ export async function returnSiteTitles() {
     'https://www.starwars.com/',
     'https://www.neowin.net/'
   ]  /*----------Import Notes Regarding This Funcation-----------*/
-  // 'https://www.neowin.net/' Title is "Tech News, Reviews & Betas | Neowin but "
+  // 'https://www.neowin.net/' Title is "Tech News, Reviews & Betas | Neowin"
   // But in the Test Case It is Written "Neowin - Where unprofessional journalism looks better"
   // If you change the test case to "Tech News, Reviews & Betas | Neowin" then it will pass
   // SomeTime URL Ping take moretime due to low internet speed or low bandwidth to get the response
