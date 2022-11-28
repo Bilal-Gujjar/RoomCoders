@@ -43,10 +43,8 @@ export async function returnSiteTitles() {
       titles.push(match[1]);
     }
   }
-
   return titles
 }
-
 /**
  * Count the tags and organize them into an array of objects.
  *
@@ -58,7 +56,6 @@ export async function returnSiteTitles() {
  */
 export function findTagCounts(localData: Array<SampleDateRecord>): Array<TagCounts> {
   const tagCounts: Array<TagCounts> = []
-
   let tagIndex = -1;
   for (let i = 0; i < localData.length; i++) {
     for (let j = 0; j < localData[i].tags.length; j++) {
@@ -71,7 +68,6 @@ export function findTagCounts(localData: Array<SampleDateRecord>): Array<TagCoun
       }
     }
   }
-
   return tagCounts
 }
 
@@ -118,5 +114,4 @@ export function calcualteImportCost(importedItems: Array<ImportedItem>): Array<I
     });
   }
   return output;
-
 }
